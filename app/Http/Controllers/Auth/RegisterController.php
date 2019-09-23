@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Auth;
 
 class RegisterController extends Controller
 {
@@ -28,7 +29,12 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    // protected $redirectTo = 'admin/dashboard';
+
+    protected function redirectTo()
+    {
+        return Auth::user()->is_authenticated ? 'admin/dashboard' : '/';
+    }
 
     /**
      * Create a new controller instance.

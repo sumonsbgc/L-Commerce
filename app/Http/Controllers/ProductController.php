@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;                                                                                                                                                
+use Illuminate\Http\Request;
 use App\Product;
+
 class ProductController extends Controller
 {
     /**
@@ -13,8 +14,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
-        return response()->json($products);
+        // $products = Product::all();
+        // return response()->json($products);
+        return view('bend.pages.products');
     }
 
     /**
@@ -24,7 +26,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('bend.pages.product-create');
     }
 
     /**
@@ -51,9 +53,7 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-
-    }
+    { }
 
     /**
      * Show the form for editing the specified resource.

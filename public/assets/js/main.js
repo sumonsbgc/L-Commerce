@@ -1,4 +1,4 @@
-(function ($) {
+(function ($) {	
 	"use strict";
 
 	var treeviewMenu = $('.app-menu');
@@ -12,9 +12,13 @@
 	// Activate sidebar treeview toggle
 	$("[data-toggle='treeview']").click(function(event) {
 		event.preventDefault();
-		if(!$(this).parent().hasClass('is-expanded')) {
+		if (!$(this).parent().hasClass('is-expanded')) {
 			treeviewMenu.find("[data-toggle='treeview']").parent().removeClass('is-expanded');
+			$(this).siblings().slideUp("slow");
+		} else {
+			$(this).siblings().slideDown("slow");			
 		}
+		$(this).siblings().slideDown("slow");	
 		$(this).parent().toggleClass('is-expanded');
 	});
 

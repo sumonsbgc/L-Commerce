@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('bend.layouts.master')
 
 @section('content')
 <div class="container">
