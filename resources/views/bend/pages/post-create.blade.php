@@ -69,6 +69,34 @@
                                         <input class="form-check-input" type="radio" name="gender">Female
                                     </label>
                                 </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="selectCategory" multiple="">
+                                        <optgroup label="Select Cities">
+                                            <option>Ahmedabad</option>
+                                            <option>Surat</option>
+                                            <option>Vadodara</option>
+                                            <option>Rajkot</option>
+                                            <option>Bhavnagar</option>
+                                            <option>Jamnagar</option>
+                                            <option>Gandhinagar</option>
+                                            <option>Nadiad</option>
+                                            <option>Morvi</option>
+                                            <option>Surendranagar</option>
+                                            <option>Junagadh</option>
+                                            <option>Gandhidham</option>
+                                            <option>Veraval</option>
+                                            <option>Ghatlodiya</option>
+                                            <option>Bharuch</option>
+                                            <option>Anand</option>
+                                            <option>Porbandar</option>
+                                            <option>Godhra</option>
+                                            <option>Navsari</option>
+                                            <option>Dahod</option>
+                                            <option>Botad</option>
+                                            <option>Kapadwanj</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="form-group">

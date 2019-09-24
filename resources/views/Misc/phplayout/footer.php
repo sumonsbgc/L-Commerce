@@ -18,7 +18,7 @@
     <script type="text/javascript">
       $('#demoNotify').click(function(){
       	$.notify({
-      		title: "Update Complete : ",
+      		title: "Update Complete : ",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
       		message: "Something cool is just updated!",
       		icon: 'fa fa-check' 
       	},{

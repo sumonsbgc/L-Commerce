@@ -13,6 +13,7 @@
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Main CSS-->
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
+  <script src="css/app.css"></script>
 </head>
 
 <body class="app sidebar-mini rtl">

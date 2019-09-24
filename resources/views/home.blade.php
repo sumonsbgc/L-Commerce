@@ -18,4 +18,7 @@
         </div>
     </div>
 </div>
+<div id="example">
+    <Example></Example>
+</div>
 @endsection
