@@ -1,6 +1,6 @@
 <!-- Essential javascripts for application to work-->
 <script src="{{asset('assets/js/jquery-3.2.1.min.js')}}"></script>
-<script src="js/app.js"></script>
+<script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('assets/js/popper.min.js')}}"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <!-- The javascript plugin to display page loading on top-->
@@ -11,11 +11,11 @@
     THESE FILES ARE USING WHERE FORM EXISTS
     ========================================================= 
     -->
-<script type="text/javascript" src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
-<script type="text/javascript" src="assets/js/plugins/select2.min.js"></script>
-<script type="text/javascript" src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
-<script type="text/javascript" src="js/plugins/bootstrap-notify.min.js"></script>
-<script type="text/javascript" src="js/plugins/sweetalert.min.js"></script>
+<script type="text/javascript" src="{{asset('assets/js/plugins/bootstrap-datepicker.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('assets/js/plugins/select2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('assets/js/plugins/bootstrap-datepicker.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('assets/js/plugins/bootstrap-notify.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('assets/js/plugins/sweetalert.min.js')}}"></script>
 <script type="text/javascript">
 	$('#demoNotify').click(function(){
       	$.notify({
@@ -45,8 +45,8 @@
       	});
       });
 </script>
-<script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="{{asset('assets/js/plugins/jquery.dataTables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('assets/js/plugins/dataTables.bootstrap.min.js')}}"></script>
 <script type="text/javascript">
 	$('#sampleTable').DataTable();
 </script>

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Post from './Post.js'
+import Cards from './Cards'
 
-export default class Dashboard extends Component{
+export default class Dashboard extends Component {
     render() {
         return (
-            <Post />
+            <div>
+                <Cards />
+            </div>
         )
     }
 }

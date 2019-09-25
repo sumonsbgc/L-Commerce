@@ -9,17 +9,17 @@
   <meta name="description" content="Laravel Dashboard, Laravel, Dashboard">
   <title>{{ config('app.name', 'Laravel') }}</title>
   <!-- Font-icon css-->
-  <link rel="stylesheet" type="text/css"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Main CSS-->
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
-  <script src="css/app.css"></script>
+  <script src="{{ asset('css/app.css')}}"></script>
 </head>
 
 <body class="app sidebar-mini rtl">
   <!-- Navbar -->
   <header class="app-header">
-    <a class="app-header__logo" href="{{ route("dashboard") }}">Laravel App</a>
+    <a class="app-header__logo" href="{{ route("dashboard") }}">
+      Laravel App</a>
     <!-- Sidebar toggle button-->
     <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
     <!-- Navbar Right Menu-->
