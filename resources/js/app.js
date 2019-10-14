@@ -4,3 +4,4 @@ require('./bootstrap');
 
 require('./components/Example');
 require('./components/Dashboard');
+require('./components/Test');

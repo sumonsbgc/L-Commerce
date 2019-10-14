@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Cards from './Cards'
+import Cards from './Cards';
 
 export default class Dashboard extends Component {
     render() {

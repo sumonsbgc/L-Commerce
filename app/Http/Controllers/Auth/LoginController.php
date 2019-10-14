@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use Auth;
 
 class LoginController extends Controller
@@ -28,11 +29,22 @@ class LoginController extends Controller
      */
 
     // protected $redirectTo = 'admin/dashboard';
-
     protected function redirectTo()
     {
-        return Auth::user()->is_authenticated ? 'dashboard' : '/home';
+        if (Auth::user()->is_authenticated) {
+            return 'admin/dashboard';
+        } else {
+            return '/login';
+        }
     }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+        $request->session()->invalidate();
+        return $this->loggedOut($request) ?: redirect('login');
+    }
+
 
     /**
      * Create a new controller instance.

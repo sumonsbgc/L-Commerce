@@ -2,7 +2,5 @@
 
 @section('content')
 <h2>Dashboard</h2>
-<div id="dashboard_card">
-    <Dashboard />
-</div>
+<div id="dashboard_card"></div>
 @endsection

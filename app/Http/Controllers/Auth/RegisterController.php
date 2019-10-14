@@ -33,7 +33,11 @@ class RegisterController extends Controller
 
     protected function redirectTo()
     {
-        return Auth::user()->is_authenticated ? 'admin/dashboard' : '/';
+        if (Auth::user()->is_authenticated) {
+            return 'admin/dashboard';
+        } else {
+            return '/login';
+        }
     }
 
     /**
