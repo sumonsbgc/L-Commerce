@@ -22,36 +22,35 @@ Route::group(["prefix" => "admin", "middleware" => "auth"], function () {
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
     // Route For Create Posts Form
-    Route::get('/post', function () {
-        return view('bend.pages.post-create');
-    })->name('create_post');
+    Route::get('/post/create', 'PostController@create')->name('post.create');
+    Route::post('/post/store', 'PostController@store')->name('post.store');
 
     // Route For Posts Lists
     Route::get('/posts', function () {
         return view('bend.pages.posts');
-    })->name('posts');
+    })->name('posts.list');
 
     // Route For Create Page Form
     Route::get('/page', function () {
         return view('bend.pages.page-create');
-    })->name('create_page');
+    })->name('page.create');
 
     // Route For Pages Lists
     Route::get('/pages', function () {
         return view('bend.pages.pages');
-    })->name('pages');
+    })->name('pages.list');
 
-    Route::get('/product', 'ProductController@create')->name('create_product');
-    Route::get('/products', 'ProductController@index')->name('products');
+    Route::get('/product', 'ProductController@create')->name('product.create');
+    Route::get('/products', 'ProductController@index')->name('products.list');
 
 
     Route::get('/category', function () {
         return view('bend.pages.category-create');
-    })->name('create_category');
+    })->name('category.create');
 
     Route::get('/categories', function () {
         return view('bend.pages.categories');
-    })->name('categories');
+    })->name('categories.list');
 
     // Route For Profile Page
     Route::get('/profile', 'ProfileController@index')->name('profile');

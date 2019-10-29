@@ -3,7 +3,7 @@
 @section('content')
 <div class="app-title">
     <div>
-        <h1><i class="fa fa-edit"></i> Add New Posts</h1>
+        <h1><i class="fa fa-edit"></i> Add New Post</h1>
     </div>
     <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -14,7 +14,8 @@
 
 <div class="row">
     <div class="col-12">
-        <form>
+        <form action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data">
+            @csrf
             <div class="row">
                 <div class="col-sm-8 col-12">
                     <div class="tile">
@@ -25,7 +26,8 @@
                             </div>
                             <div class="form-group">
                                 <label class="control-label">Sub Title</label>
-                                <input class="form-control" type="text" placeholder="Write Your Sub Title">
+                                <input class="form-control" type="text" placeholder="Write Your Sub Title"
+                                    name="sub_title">
                             </div>
                         </div>
                     </div>
@@ -33,11 +35,13 @@
                         <div class="tile-body">
                             <div class="form-group">
                                 <label class="control-label">Post Content</label>
-                                <textarea class="form-control" rows="4" placeholder="Write Your Content"></textarea>
+                                <textarea class="form-control" rows="4" placeholder="Write Your Content"
+                                    name="post_content"></textarea>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">Post Excerpt</label>
-                                <textarea class="form-control" rows="3" placeholder="Write Your Excerpt"></textarea>
+                                <textarea class="form-control" rows="3" placeholder="Write Your Excerpt"
+                                    name="post_excerpt"></textarea>
                             </div>
                         </div>
                     </div>
@@ -46,10 +50,10 @@
                 <div class="col-sm-4 col-12">
                     <div class="tile">
                         <div class="tile-footer">
-                            <button class="btn btn-primary" type="button">
+                            <button class="btn btn-primary" type="submit" name="publish" value="publish">
                                 <i class="fa fa-fw fa-lg fa-check-circle"></i>Publish
                             </button>
-                            <button class="btn btn-primary" type="button">
+                            <button class="btn btn-primary" type="submit" name="draft" value="draft">
                                 <i class="fa fa-fw fa-lg fa-check-circle"></i>Draft
                             </button>
                         </div>

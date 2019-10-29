@@ -25,8 +25,9 @@
         <i class="treeview-indicator fa fa-angle-right"></i>
       </a>
       <ul class="treeview-menu">
-        <li><a class="treeview-item" href="{{ route('posts') }}"><i class="icon fa fa-circle-o"></i>All Posts</a></li>
-        <li><a class="treeview-item" href="{{ route('create_post') }}"><i class="icon fa fa-circle-o"></i>Add New
+        <li><a class="treeview-item" href="{{ route('posts.list') }}"><i class="icon fa fa-circle-o"></i>All Posts</a>
+        </li>
+        <li><a class="treeview-item" href="{{ route('post.create') }}"><i class="icon fa fa-circle-o"></i>Add New
             Post</a></li>
       </ul>
     </li>
@@ -37,8 +38,9 @@
         <i class="treeview-indicator fa fa-angle-right"></i>
       </a>
       <ul class="treeview-menu">
-        <li><a class="treeview-item" href="{{ route('pages') }}"><i class="icon fa fa-circle-o"></i>All Pages</a></li>
-        <li><a class="treeview-item" href="{{ route('create_page') }}"><i class="icon fa fa-circle-o"></i>Add New
+        <li><a class="treeview-item" href="{{ route('pages.list') }}"><i class="icon fa fa-circle-o"></i>All Pages</a>
+        </li>
+        <li><a class="treeview-item" href="{{ route('page.create') }}"><i class="icon fa fa-circle-o"></i>Add New
             Page</a></li>
       </ul>
     </li>
@@ -50,10 +52,11 @@
       </a>
       <ul class="treeview-menu">
         <li>
-          <a class="treeview-item" href="{{ route('products') }}"><i class="icon fa fa-circle-o"></i>All Products</a>
+          <a class="treeview-item" href="{{ route('products.list') }}"><i class="icon fa fa-circle-o"></i>All
+            Products</a>
         </li>
         <li>
-          <a class="treeview-item" href="{{ route('create_product') }}"><i class="icon fa fa-circle-o"></i>Add New
+          <a class="treeview-item" href="{{ route('product.create') }}"><i class="icon fa fa-circle-o"></i>Add New
             Product</a>
         </li>
       </ul>
@@ -65,9 +68,9 @@
         <i class="treeview-indicator fa fa-angle-right"></i>
       </a>
       <ul class="treeview-menu">
-        <li><a class="treeview-item" href="{{ route('categories') }}"><i class="icon fa fa-circle-o"></i>All
+        <li><a class="treeview-item" href="{{ route('categories.list') }}"><i class="icon fa fa-circle-o"></i>All
             Categories</a></li>
-        <li><a class="treeview-item" href="{{ route('create_category') }}"><i class="icon fa fa-circle-o"></i>Add New
+        <li><a class="treeview-item" href="{{ route('category.create') }}"><i class="icon fa fa-circle-o"></i>Add New
             Category</a></li>
       </ul>
     </li>
