@@ -1,5 +1,7 @@
 <!-- Essential javascripts for application to work-->
 <script src="{{asset('assets/js/jquery-3.2.1.min.js')}}"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.0.6/js/froala_editor.pkgd.min.js">
+</script>
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('assets/js/popper.min.js')}}"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
@@ -44,8 +46,6 @@ THESE FILES ARE USING WHERE FORM EXISTS
       		}
       	});
       });
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.0.6/js/froala_editor.pkgd.min.js">
 </script>
 <script type="text/javascript" src="{{asset('assets/js/plugins/jquery.dataTables.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/plugins/dataTables.bootstrap.min.js')}}"></script>
