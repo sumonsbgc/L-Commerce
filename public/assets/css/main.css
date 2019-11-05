@@ -532,6 +532,11 @@ pre code {
   margin-left: auto;
 }
 
+.sm_category_body {
+  height: 120px;
+  overflow-y: auto;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

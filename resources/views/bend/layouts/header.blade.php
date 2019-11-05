@@ -10,6 +10,8 @@
   <title>{{ config('app.name', 'Laravel') }}</title>
   <!-- Font-icon css-->
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/froala-editor@3.0.6/css/froala_editor.pkgd.min.css" rel="stylesheet"
+    type="text/css" />
   <!-- Main CSS-->
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
   <script src="{{ asset('css/app.css')}}"></script>
