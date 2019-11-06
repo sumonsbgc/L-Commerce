@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="content_area mb-4">
-                        <textarea name="post_content" id="post_content"></textarea>
+                        <textarea name="post_content" class="form-control" rows="3" id="post_content"></textarea>
                     </div>
 
                     <div class="tile">
@@ -100,13 +100,13 @@
                     </div>
 
                     <div class="tile">
+                        <h3 class="tile-title">Featured Image</h3>
                         <div class="tile-body">
                             <div class="form-group">
                                 <label class="control-label" data-toggle="modal" data-target="#post_thumbnail">
-                                    Featured Image
+                                    Set Featured Image
                                 </label>
-                                <div class="">
-
+                                <div class="display_post_thumb">
                                 </div>
                             </div>
                             <!-- The Modal -->
@@ -119,13 +119,28 @@
                 <div class="col-sm-9 col-12">
                     <div class="tile">
                         <div class="tile-title-w-btn border-bottom pb-1">
-                            <h3 class="title">All Items</h3>
-                            <p><a class="btn btn-primary icon-btn" href=""><i class="fa fa-plus"></i>Add Item </a></p>
+                            <h3 class="title">Custom Fields</h3>
+                            <p>
+                                <button class="btn btn-primary " type="button" id="create_meta_fields">
+                                    <i class="fa fa-plus"></i>New Custom Field
+                                </button>
+                            </p>
                         </div>
-                        <div class="tile-body">
-                            <b>Card with action button </b><br>
-                            Hey there, I am a very simple card. I am good at containing small bits of information. I am
-                            quite convenient because I require little markup to use effectively.
+                        <div class="tile-body" id="meta_container">
+                            <div class="row" id="post_meta_section">
+                                <div class="form-group col-sm-5">
+                                    <input type="text" class="form-control" name="meta_key[]" value="">
+                                </div>
+                                <div class="form-group col-sm-5">
+                                    <textarea name="meta_value[]" id="" class="form-control" cols="30" rows="1">
+                                    </textarea>
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <button class="btn btn-primary remove_meta_fields" type="button">
+                                        <i class="fa fa-fw fa-lg fa-trash mr-0"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
