@@ -8,10 +8,13 @@
 <!-- The javascript plugin to display page loading on top-->
 <script src="{{asset('assets/js/plugins/pace.min.js')}}"></script>
 
+{{-- Dropzone JS FILE --}}
+<script src="{{asset('assets/js/dropzone.js')}}"></script>
+
 <!--
-========================================================= 
+=========================================================
 THESE FILES ARE USING WHERE FORM EXISTS
-========================================================= 
+=========================================================
 -->
 <script type="text/javascript" src="{{asset('assets/js/plugins/bootstrap-datepicker.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/plugins/select2.min.js')}}"></script>

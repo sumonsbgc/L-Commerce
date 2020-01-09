@@ -14,7 +14,9 @@
     type="text/css" />
   <!-- Main CSS-->
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
-  <script src="{{ asset('css/app.css')}}"></script>
+  {{-- <link rel="stylesheet" href="{{ asset('assets/css/basic.css') }}"> --}}
+  <link rel="stylesheet" href="{{ asset('assets/css/dropzone.css') }}">
+  <link href="{{ asset('css/app.css')}}" type="text/css" rel="stylesheet">
 </head>
 
 <body class="app sidebar-mini rtl">

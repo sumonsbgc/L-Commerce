@@ -15,9 +15,7 @@
 Auth::routes(['verify' => true]);
 
 Route::group(["prefix" => "admin", "middleware" => "auth"], function () {
-
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-
     // Route For Create Posts Form
     Route::get('/post/create', 'PostController@create')->name('post.create');
     Route::post('/post/store', 'PostController@store')->name('post.store');
@@ -62,4 +60,5 @@ Route::group(["prefix" => "admin", "middleware" => "auth"], function () {
 Route::group([], function () {
     Route::get('/', 'HomeController@index')->name('home');
 });
+
 // Route::get('/', 'HomeController@index')->name('home');

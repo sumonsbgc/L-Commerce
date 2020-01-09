@@ -29,6 +29,7 @@
               <h3>HOME</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
+              <input type="file" name="post_thumbnail">
             </div>
             <div id="menu1" class="container tab-pane fade"><br>
               <h3>Menu 1</h3>

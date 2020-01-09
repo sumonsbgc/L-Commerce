@@ -99,6 +99,26 @@
                         </div>
                     </div>
 
+                    <div class="tile d-none">
+                        <h5>Select Category</h5>
+                        <div class="tile-footer"></div>
+                        <div class="tile-body">
+                            <div class="form-group">
+                                <select name="category_name[]" id="category_name" class="select2" multiple="multiple"
+                                    data-placeholder="Select Your Category" style="width: 100%;">
+                                    <option value="category one">Category One</option>
+                                    <option value="category one">Category Two</option>
+                                    <option value="category one">Category Three</option>
+                                    <option value="category one">Category Four</option>
+                                    <option value="category one">Category Five</option>
+                                    <option value="category one">Category Six</option>
+                                    <option value="category one">Category Seven</option>
+                                    <option value="category one">Category Eight</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="tile">
                         <h3 class="tile-title">Featured Image</h3>
                         <div class="tile-body">
@@ -109,8 +129,8 @@
                                 <div class="display_post_thumb">
                                 </div>
                             </div>
-                            <!-- The Modal -->
-                            @includeIf('bend.modal.thumbnail', ['some' => 'data'])
+                            {{-- <!-- The Modal -->
+                            @includeIf('bend.modal.thumbnail', ['some' => 'data']) --}}
                         </div>
                     </div>
                 </div>
@@ -148,4 +168,8 @@
         </form>
     </div>
 </div>
+
+<!-- The Modal -->
+@includeIf('bend.modal.thumbnail', ['some' => 'data'])
+
 @endsection
